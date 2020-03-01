@@ -18,6 +18,8 @@ import timeseriesweka.classifiers.ensembles.elastic_ensemble.WDTW1NN;
 import timeseriesweka.classifiers.ensembles.elastic_ensemble.DTW1NN;
 import timeseriesweka.classifiers.ensembles.elastic_ensemble.ED1NN;
 import timeseriesweka.classifiers.ensembles.elastic_ensemble.MSM1NN;
+import timeseriesweka.classifiers.ensembles.elastic_ensemble.TWE1NN;
+import timeseriesweka.classifiers.ensembles.elastic_ensemble.ERP1NN;
 import timeseriesweka.classifiers.FastShapelets;
 import timeseriesweka.classifiers.LearnShapelets;
 import timeseriesweka.classifiers.NN_CID;
@@ -30,6 +32,7 @@ import timeseriesweka.classifiers.LPS;
 import timeseriesweka.classifiers.SAXVSM;
 import timeseriesweka.classifiers.ShapeletTransformClassifier;
 import timeseriesweka.classifiers.DD_DTW;
+import timeseriesweka.classifiers.ElasticEnsemble;
 import timeseriesweka.classifiers.BagOfPatterns;
 import experiments.DataSets;
 import fileIO.OutFile;
@@ -144,10 +147,16 @@ public class ClassificationExamples {
                 c=new MSM1NN();
                 break;
             case "TWE":
-                c=new MSM1NN();
+                c=new TWE1NN();
+                break;
+            case "ERP":
+                c=new ERP1NN();
                 break;
             case "WDTW":    
                 c=new WDTW1NN();
+                break;
+            case "EE":    
+                c=new ElasticEnsemble();
                 break;
                 
             case "LearnShapelets": case "LS":
@@ -317,12 +326,29 @@ public class ClassificationExamples {
 //Example usage: 
         
 //1. Set up the paths
-        DataSets.problemPath=DataSets.dropboxPath+"TSC Problems/";
-        DataSets.resultsPath="C:/Temp/";
+        //DataSets.problemPath=DataSets.dropboxPath+"TSC Problems/";
+        DataSets.problemPath="/scratch/dy1n16/NewTSCProblems/";
+        DataSets.resultsPath="/scratch/dy1n16/TSCResults/";
 //2. Set up the arguments: Classifier, Problem, Fold
-        String[] paras={"BOSS","ItalyPowerDemand","1"};
+      
 //3. Run a full experiment, saving the results
-        singleClassifierAndFold(paras);
+        
+        String[] paras10={"BOSS","EthanolLevel","6"};
+        singleClassifierAndFold(paras10);
+        
+        String[] paras9={"EE","EthanolLevel","6"};
+        singleClassifierAndFold(paras9);
+        
+        
+        
+       
+        
+        
+
+        
+        
+       
+        
     }
     
 }

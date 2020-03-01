@@ -125,10 +125,10 @@ public class WDTW1NN extends Efficient1NN{
     }
     
     public static void runComparison() throws Exception{
-        String tscProbDir = "C:/users/sjx07ngu/Dropbox/TSC Problems/";
+        String tscProbDir = "/scratch/dy1n16/NewTSCProblems/";
         
 //        String datasetName = "ItalyPowerDemand";
-        String datasetName = "GunPoint";
+        String datasetName = "ACSF1";
 //        String datasetName = "Beef";
 //        String datasetName = "Coffee";
 //        String datasetName = "SonyAiboRobotSurface1";
@@ -193,7 +193,7 @@ public class WDTW1NN extends Efficient1NN{
 //            runComparison();
 //        }
 
-        Instances train = ClassifierTools.loadData("C:/users/sjx07ngu/dropbox/tsc problems/SonyAiboRobotSurface1/SonyAiboRobotSurface1_TRAIN");
+        Instances train = ClassifierTools.loadData("/scratch/dy1n16/NewTSCProblems/Beef/Beef_TRAIN");
         
         Instance one, two;
         one = train.firstInstance();

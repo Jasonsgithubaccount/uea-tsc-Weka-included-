@@ -14,5 +14,5 @@ dependencies {
 }
 
 application {
-    mainClassName = "App"
+    mainClassName = "timeseriesweka.examples.ClassificationExamples"
 }

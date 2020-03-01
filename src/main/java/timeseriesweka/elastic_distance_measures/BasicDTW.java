@@ -246,7 +246,7 @@ public class BasicDTW extends EuclideanDistance{
     
     public static void main(String[] args){
 //Test BasicDTW
-        Instances test = ClassifierTools.loadData("C:\\Users\\ajb\\Dropbox\\test\\Beef");
+        Instances test = ClassifierTools.loadData("/home/dy1n16/NewTSCProblems/Beef/Beef_TEST");
         BasicDTW dtw=new BasicDTW(test);
         EuclideanDistance ed=new EuclideanDistance(test);
         ed.setDontNormalize(true);

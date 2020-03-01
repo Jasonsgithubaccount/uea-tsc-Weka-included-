@@ -19,7 +19,7 @@ import timeseriesweka.classifiers.ensembles.weightings.EqualWeighting;
 import vector_classifiers.CAWPE;
 
 /**
- * Implemented as separate classifier for explicit comparison, from Kuncheva and Rodríguez (2014)
+ * Implemented as separate classifier for explicit comparison, from Kuncheva and Rodrguez (2014)
  * 
  * @author James Large (james.large@uea.ac.uk)
  */

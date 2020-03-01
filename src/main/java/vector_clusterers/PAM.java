@@ -362,7 +362,7 @@ public class PAM extends AbstractVectorClusterer{
         return !changedMedoid;
     }
     
-    //Lletı, R., et al. 
+    //Llet, R., et al. 
     //"Selecting variables for k-means cluster analysis by using a genetic algorithm that optimises the silhouettes." 
     //Analytica Chimica Acta 515.1 (2004): 87-100.
     

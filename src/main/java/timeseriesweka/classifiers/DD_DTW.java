@@ -85,7 +85,7 @@ public class DD_DTW extends kNN implements SaveParameterInfo{
     public TechnicalInformation getTechnicalInformation() {
         TechnicalInformation 	result;
         result = new TechnicalInformation(TechnicalInformation.Type.ARTICLE);
-        result.setValue(TechnicalInformation.Field.AUTHOR, "T. Górecki and M. Łuczak");
+        result.setValue(TechnicalInformation.Field.AUTHOR, "T. Grecki and M. uczak");
         result.setValue(TechnicalInformation.Field.TITLE, "Using derivatives in time series classification");
         result.setValue(TechnicalInformation.Field.JOURNAL, "Data Mining and Knowledge Discovery");
         result.setValue(TechnicalInformation.Field.VOLUME, "26");

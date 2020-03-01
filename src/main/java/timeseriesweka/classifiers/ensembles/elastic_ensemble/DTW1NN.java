@@ -200,7 +200,7 @@ public class DTW1NN extends Efficient1NN {
     }
     
     public static void runComparison() throws Exception{
-        String tscProbDir = "C:/users/sjx07ngu/Dropbox/TSC Problems/";
+        String tscProbDir = "/home/dy1n16/NewTSCProblems/";
         
 //        String datasetName = "ItalyPowerDemand";
         String datasetName = "GunPoint";
@@ -208,7 +208,7 @@ public class DTW1NN extends Efficient1NN {
 //        String datasetName = "Coffee";
 //        String datasetName = "SonyAiboRobotSurface1";
 
-        double r = 0.1;
+        double r = 0.8;
         Instances train = ClassifierTools.loadData(tscProbDir+datasetName+"/"+datasetName+"_TRAIN");
         Instances test = ClassifierTools.loadData(tscProbDir+datasetName+"/"+datasetName+"_TEST");
         

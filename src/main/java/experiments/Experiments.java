@@ -359,8 +359,8 @@ public class Experiments  {
             boolean threaded=false;
             if(threaded){
                 String[] settings=new String[6];
-                settings[0]="-dp=E:/Data/TSCProblems2018/";//Where to get data                
-                settings[1]="-rp=E:/Results/";//Where to write results                
+                settings[0]="-dp=/home/dy1n16/NewTSCProblems/";//Where to get data                
+                settings[1]="-rp=/home/dy1n16/TSCResults/";//Where to write results                
                 settings[2]="-gtf=true"; //Whether to generate train files or not               
                 settings[3]="-cn=RISE"; //Classifier name
                 settings[5]="1";
@@ -371,10 +371,10 @@ public class Experiments  {
             }else{//Local run without args, mainly for debugging
                 String[] settings=new String[6];
 //Location of data set
-                settings[0]="-dp=E:/Data/TSCProblems2018/";//Where to get data                
-                settings[1]="-rp=E:/Results/";//Where to write results                
+                settings[0]="-dp=/home/dy1n16/NewTSCProblems/";//Where to get data                
+                settings[1]="-rp=/home/dy1n16/TSCResults/";//Where to write results                
                 settings[2]="-gtf=false"; //Whether to generate train files or not               
-                settings[3]="-cn=TunedTSF"; //Classifier name
+                settings[3]="-cn=RISE"; //Classifier name
 //                for(String str:DataSets.tscProblems78){
                     settings[4]="-dn="+"ItalyPowerDemand"; //Problem file   
                     settings[5]="-f=2";//Fold number (fold number 1 is stored as testFold0.csv, its a cluster thing)  
